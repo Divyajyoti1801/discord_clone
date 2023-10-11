@@ -15,12 +15,18 @@ export const ChatWelcome = ({ name, type }: ChatWelcomeProps) => {
       )}
       <p className="text-xl md:text-3xl font-bold">
         {type === "channel" ? "Welcome to #" : ""}
-        {name}
+        {type === "conversation"
+          ? name.split(" ")[1] !== null
+            ? name.split(" ")[0]
+            : name
+          : name}
       </p>
       <p className="text-zinc-600 dark:text-zinc-400 text-sm">
         {type === "channel"
           ? `This is the start of the #${name} channel`
-          : `This is the start of your conversation with ${name}`}
+          : `This is the start of your conversation with ${
+              name.split(" ")[1] !== null ? name.split(" ")[0] : name
+            }`}
       </p>
     </div>
   );

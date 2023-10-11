@@ -1,6 +1,7 @@
 "use client";
 
 import { useChatQuery } from "@/hooks/use-chat-query";
+import { useChatScroll } from "@/hooks/use-chat-scroll";
 import { useChatSocket } from "@/hooks/use-chat-socket";
 import { Member, Message, Profile } from "@prisma/client";
 import { format } from "date-fns";
@@ -53,6 +54,13 @@ export const ChatMessages = ({
       paramValue,
     });
   useChatSocket({ queryKey, addKey, updateKey });
+  useChatScroll({
+    chatRef,
+    bottomRef,
+    loadMore: fetchNextPage,
+    shouldLoadMore: !isFetchingNextPage && !!hasNextPage,
+    count: data?.pages?.[0]?.item?.length ?? 0,
+  });
 
   if (status === "loading") {
     return (
@@ -94,7 +102,6 @@ export const ChatMessages = ({
           )}
         </div>
       )}
-      <ChatWelcome type={type} name={name} />
       <div className="flex flex-col-reverse mt-auto">
         {data?.pages?.map((group, i) => (
           <Fragment key={i}>
