@@ -3,7 +3,6 @@
 import { useUser } from "@clerk/nextjs";
 import { LiveKitRoom, VideoConference } from "@livekit/components-react";
 import "@livekit/components-styles";
-import { Channel } from "@prisma/client";
 import { Loader2 } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -24,7 +23,7 @@ export const MediaRoom = ({ chatId, video, audio }: MediaRoomProps) => {
       ? `${user?.firstName} ${user?.lastName}`
       : `${user?.firstName}`;
 
-    async () => {
+    (async () => {
       try {
         const resp = await fetch(
           `/api/livekit?room=${chatId}&username=${name}`
@@ -34,7 +33,7 @@ export const MediaRoom = ({ chatId, video, audio }: MediaRoomProps) => {
       } catch (e) {
         console.log(e);
       }
-    };
+    })();
   }, [user?.firstName, user?.lastName, chatId]);
 
   if (token === "") {
