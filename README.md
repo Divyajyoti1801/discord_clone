@@ -4,16 +4,19 @@
 
 Welcome to the Fullstack Discord Clone repository! This project is a feature-rich real-time messaging application built using Next.js, React, Socket.io, Prisma, Tailwind, MySQL, and more.
 
-![Project Image](url_to_project_image.png)
+![Project Image](project_screenshot.png)
 
 ## Table of Contents
-- [Features](#features)
-- [Live Projet URL](#live)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+
+- [Fullstack Discord Clone](#fullstack-discord-clone)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Live Project URL](#live-project-url)
+  - [Tech Stack](#tech-stack)
+  - [Getting Started](#getting-started)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [License](#license)
 
 ## Features
 
@@ -78,4 +81,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 Crafted with ❤️ by [Divyajyoti](https://github.com/Divyajyoti1801)
 
-[![GitHub stars](https://img.shields.io/github/stars/Divyajyoti1801/your-repo.svg?style=social)](https://github.com/Divyajyoti1801/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/Divyajyoti1801/your-repo.svg?style=social)](https://github.com/Divyajyoti1801/discord_clone)
