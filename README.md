@@ -8,7 +8,7 @@ Welcome to the Fullstack Discord Clone repository! This project is a feature-ric
 
 ## Table of Contents
 - [Features](#features)
-- [Demo](#demo)
+- [Live Projet URL](#live)
 - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
@@ -35,9 +35,9 @@ Welcome to the Fullstack Discord Clone repository! This project is a feature-ric
 - **MySQL Database**: Store data in a MySQL database hosted on Planetscale for reliability.
 - **Authentication**: Secure your application with Clerk for user authentication.
 
-## Demo
+## Live Project URL
 
-Explore the project through a video tutorial available at [Demo Link](demo_url).
+Explore the project through a Live URL available at [Site Link](https://discordclone-production-5d1c.up.railway.app).
 
 ![Demo GIF](url_to_demo_gif.gif)
 
@@ -76,6 +76,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ---
 
-Crafted with ❤️ by [Your Name](your_github_profile_link)
+Crafted with ❤️ by [Divyajyoti](https://github.com/Divyajyoti1801)
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/your-repo.svg?style=social)](https://github.com/yourusername/your-repo/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/Divyajyoti1801/your-repo.svg?style=social)](https://github.com/Divyajyoti1801/stargazers)
